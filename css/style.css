@@ -140,7 +140,7 @@ h2 {
     .container .main{
         width: 100%;
         height: auto;
-        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
 
     }
 
@@ -169,7 +169,7 @@ h2 {
     .container .main{
         width: 50%;
         height: auto;
-        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
 
     }
 
@@ -199,7 +199,7 @@ h2 {
     .container .main{
         width: 50%;
         height: auto;
-        padding-bottom: 0 !important;
+        margin-bottom: 5vh !important;
 
     }
 
