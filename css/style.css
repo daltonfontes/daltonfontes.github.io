@@ -133,7 +133,7 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .container .main{
-        width: 50%;
+        width: 100%;
         height: auto;
 
     }
@@ -141,6 +141,7 @@ h2 {
     .button {
         width: 50%;
         float: none;
+        white-space: nowrap;
     }
 
     .text span{
@@ -168,6 +169,7 @@ h2 {
     .button {
         width: 50%;
         float: none;
+        white-space: nowrap;
     }
 
     .text span{
@@ -195,6 +197,7 @@ h2 {
 
     .button {
         width: 50%;
+        white-space: nowrap;
     }
 
     .text span{
