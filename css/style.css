@@ -156,14 +156,14 @@ h2 {
     }
 
     .navbar {
-        font-size: 7vh;
+        display: none;
     }
 
     .navbar a {
-        margin: 0 0 5vh;
+        display: none;
     }
     .menu i {
-        margin: 1vh 0 -3vh;
+        display: none;
     }
 }
 
@@ -188,14 +188,14 @@ h2 {
     }
 
     .navbar {
-        font-size: 7vh;
+        display: none;
     }
 
     .navbar a {
-        margin: 0 0 5vh;
+        display: none;
     }
     .menu i {
-        margin: 1vh 0 -3vh;
+        display: none;
     }
 
 }
@@ -220,14 +220,14 @@ h2 {
     }
 
     .navbar {
-        font-size: 7vh;
+        display: none;
     }
 
     .navbar a {
-        margin: 0 0 5vh;
+        display: none;
     }
     .menu i {
-        margin: 1vh 0 -3vh;
+        display: none;
     }
 
 }
