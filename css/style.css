@@ -111,15 +111,20 @@ h2 {
 }
 
 .menu i{
-    margin-top: 25px;
+    margin-top: 45px;
     color: white;
     text-align: center;
-    font-size: 20px;
-    line-height: 51px;
+    font-size: 25px;
+    line-height: 25vh;
     height: 51px;
     position: relative;
     text-decoration: none;
 
+}
+
+.menu i:hover {
+    color: dodgerblue;
+    transition-duration: 1s;
 }
 
 .navbar .logo {
@@ -128,13 +133,6 @@ h2 {
     background: #070707;
     padding: 15px 0;
 }
-
-.sub-menu {
-    font-size: 10px;
-    color: white;
-    padding: 15em 0em;
-}
-
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .container .main{
