@@ -1,0 +1,37 @@
+title: "Dalton Fontes' Blog"
+description: "Personal blog about tech, coding, and life."
+author: "Dalton Fontes"
+url: "https://daltonfontes.github.io"
+baseurl: ""
+theme: minima
+
+# Social Links
+social_links:
+  github: https://github.com/daltonfontes
+  linkedin: https://linkedin.com/in/daltonfontes
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Customization
+minima:
+  skin: dark
+  social_links:
+    github: daltonfontes
+    linkedin: daltonfontes
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
