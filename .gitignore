@@ -1,0 +1,26 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Node.js (caso use ferramentas JS)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code
+.vscode/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Build/Jekyll (caso use)
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Outros
+.env
