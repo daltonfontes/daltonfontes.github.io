@@ -1,22 +1,42 @@
----
-layout: home
-title: Welcome to Dalton Fontes' Blog
-description: A personal blog about tech, coding, and life.
----
+title: "Dalton Fontes' Blog"
+description: "Personal blog about tech, coding, and life."
+author: "Dalton Fontes"
+url: "https://daltonfontes.github.io"
+baseurl: ""
+theme: minima
 
-# Welcome to My Blog
+# Social Links
+social_links:
+  - title: "github"
+    icon: "github"
+    url: "https://github.com/daltonfontes"
 
-Hello! I'm Dalton Fontes, and this is my personal blog where I share my thoughts on technology, coding, and various aspects of life.
+  - title: "linkedin"
+    icon: "linkedin"
+    url: https://linkedin.com/in/daltonfontes
 
-## Recent Posts
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span>{{ post.date | date: "%B %d, %Y" }}</span>
-    </li>
-  {% endfor %}
-</ul>
+# Permalinks
+permalink: /:year/:month/:day/:title/
 
-Feel free to explore and connect with me on [GitHub](https://github.com/daltonfontes) and [LinkedIn](https://linkedin.com/in/daltonfontes)!
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Customization
+minima:
+  skin: dark
+  social_links:
+    github: daltonfontes
+    linkedin: daltonfontes
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
