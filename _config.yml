@@ -3,7 +3,7 @@ description: "Personal blog about tech, coding, and life."
 author: "Dalton Fontes"
 url: "https://daltonfontes.github.io"
 baseurl: ""
-theme: minima
+remote_theme: "jekyll/minima@1e8a445"
 
 # Social Links
 social_links:
