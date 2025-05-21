@@ -4,5 +4,11 @@
         "date": "20 de maio de 2025",
         "content": "A ideia desse blog é simples: compartilhar o que ando estudando, desenvolvendo e descobrindo por aí",
         "url": "posts/bem-vindo.html"
+    },
+    {
+        "title": "Docker explicado de um jeito que faz sentido",
+        "date": "21 de maio de 2025",
+        "content": "Hoje quero falar um pouco sobre Docker e como ele pode ajudar a gente, devs, a criar e gerenciar diferentes ambientes — desde o desenvolvimento até testes — de forma mais simples e organizada.",
+        "url": "posts/docker-explicado-de-um-jeito-que-faz-sentido.html"
     }
 ]

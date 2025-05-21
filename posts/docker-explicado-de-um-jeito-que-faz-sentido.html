@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker explicado de um jeito que faz sentido</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="/">Dalton Fontes</a></h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <article class="post">
+            <h2 class="post-title">Docker explicado de um jeito que faz sentido</h2>
+            <p class="post-meta">21 de maio de 2025</p>
+            <div class="post-content">
+                <p>Hoje quero falar um pouco sobre Docker e como ele pode ajudar a gente, devs, a criar e gerenciar
+                    diferentes ambientes — desde o desenvolvimento até testes — de forma mais simples e organizada.
+                    Com ele, a gente consegue rodar tudo isolado, sem depender tanto da configuração do sistema ou do
+                    famoso “na minha máquina roda.
+                    É uma baita ferramenta pra manter os ambientes limpos, padronizados e fáceis de replicar.
+                </p>
+                <h2 class="post-title">O que é Docker (sem enrolação)</h2>
+                <div class="post-content">
+                    <p>
+                        Docker é uma plataforma que permite empacotar uma aplicação e todas as suas dependências dentro
+                        de
+                        containers.
+                        Pensa num container como uma caixinha onde você coloca o sistema operacional, o servidor, as
+                        libs e
+                        tudo que o app precisa pra rodar.
+
+                        E o melhor: essa caixinha roda igual em qualquer lugar — seja no seu PC, no servidor, ou no
+                        notebook
+                        do colega.
+                    </p>
+                </div>
+                <h2 class="post-title">Por que usar Docker no desenvolvimento</h2>
+                <div class="post-content">
+                    <p>
+                        Algumas vantagens práticas:
+                    <ul>
+                        <li>Você não precisa instalar um monte de coisa no seu sistema (ex: PostgreSQL, Redis, Node,
+                            etc.).</li>
+                        <li>Evita conflitos de versão: dá pra rodar projetos diferentes com dependências diferentes sem
+                            briga.</li>
+                        <li>Facilita o onboarding: é só dar um `docker compose up` e o ambiente tá pronto.</li>
+                        <li>Ajuda a simular ambientes de produção/local sem dor de cabeça.</li>
+                    </ul>
+                    </p>
+                </div>
+                <h2 class="post-title">Isolamento de ambientes</h2>
+                <div class="post-content">
+                    <p>
+                        Cada container roda isolado do resto do sistema e de outros containers.
+                        Ou seja: o banco do projeto X não interfere no banco do projeto Y, mesmo que ambos estejam
+                        rodando ao mesmo tempo.
+
+                        Isso é ouro quando você tá testando coisas diferentes ou trabalhando em múltiplos projetos.
+                    </p>
+                </div>
+                <h2 class="post-title">Exemplo básico com docker-compose</h2>
+                <div class="post-content">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Fira+Code&fs=14px&lh=152%25&si=false&es=2x&wm=false&code=version%253A%2520%273.8%27%250A%250Aservices%253A%250A%2520%2520db%253A%250A%2520%2520%2520%2520image%253A%2520postgres%250A%2520%2520%2520%2520environment%253A%250A%2520%2520%2520%2520%2520%2520POSTGRES_USER%253A%2520user%250A%2520%2520%2520%2520%2520%2520POSTGRES_PASSWORD%253A%2520pass%250A%2520%2520%2520%2520%2520%2520POSTGRES_DB%253A%2520mydb%250A%2520%2520%2520%2520ports%253A%250A%2520%2520%2520%2520%2520%2520-%2520%25225432%253A5432%2522%250A%250A%2520%2520app%253A%250A%2520%2520%2520%2520build%253A%2520.%250A%2520%2520%2520%2520ports%253A%250A%2520%2520%2520%2520%2520%2520-%2520%25223000%253A3000%2522%250A%2520%2520%2520%2520depends_on%253A%250A%2520%2520%2520%2520%2520%2520-%2520db%250A"
+                        style="width: 385px; height: 575px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                    <p>
+                        Com isso, é só rodar docker compose up e pronto: o banco já estão rodando.
+                    </p>
+                </div>
+                <h2 class="post-title">Dicas rápidas</h2>
+                <div class="post-content">
+                    <p>
+                        <li>use .env pra esconder senhas e configs sensíveis.</li>
+
+                        <li>Aprenda a usar volumes se quiser salvar dados entre execuções.</li>
+
+                        <li>Use Dockerfile pra personalizar a imagem da sua aplicação.</li>
+
+                        <li>Teste primeiro local, depois leva pro servidor com o mesmo docker-compose.yml.</li>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        &copy; 2025 Dalton Fontes.
+    </footer>
+</body>
+
+</html>
